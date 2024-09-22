@@ -34,4 +34,12 @@ public class Produto {
 		return 0;
 	}
 
+	public double getValorUnitario() {
+		return valorUnitario;
+	}
+
+	public void setValorUnitario(double valorUnitario) {
+		this.valorUnitario = valorUnitario;
+	}
+
 }

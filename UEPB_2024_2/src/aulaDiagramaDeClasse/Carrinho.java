@@ -41,7 +41,11 @@ public class Carrinho {
 	}
 
 	public double getValorTotalDaCompra() {
-		return 0;
+		double soma = 0;
+		for(int i = 0; i < this.listaDeProdutos.size(); i++) {
+			soma = soma + (this.listaDeProdutos.get(i).getQuantidade() * this.listaDeProdutos.get(i).getValorUnitario());
+		}
+		return soma;
 	}
 
 }
